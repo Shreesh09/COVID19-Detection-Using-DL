@@ -1,3 +1,5 @@
 kaggle.json
+./cnn_model.h5
 .ipynb_checkpoints/
 COVID/
+covid19-radiography-database.zip
