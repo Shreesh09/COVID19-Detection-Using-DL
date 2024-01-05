@@ -1,7 +1,7 @@
 FROM python:3.10.12
-WORKDIR /code
-COPY ./requirements.txt ./requirements.txt
-RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
+WORKDIR /app
+COPY ./requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
 RUN useradd -m -u 1000 user
 USER user
 ENV HOME=/home/user \
