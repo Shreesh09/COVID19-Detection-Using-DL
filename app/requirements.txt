@@ -1,3 +1,4 @@
 flask
 tensorflow[and-cuda]
 numpy
+opencv-python
