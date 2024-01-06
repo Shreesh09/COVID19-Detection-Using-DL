@@ -17,6 +17,9 @@ app = Flask(__name__)
 
 # Model saved with tf.keras model.save()
 MODEL_PATH = './models/cnn_model.keras'
+UPLOAD_FOLDER = 'uploads'
+if not os.path.exists(UPLOAD_FOLDER):
+    os.makedirs(UPLOAD_FOLDER)
 
 # Load your trained model
 model = load_model(MODEL_PATH, compile=False)
